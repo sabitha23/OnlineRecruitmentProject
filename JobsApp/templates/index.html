@@ -1,0 +1,73 @@
+{% extends 'basic.html' %}
+
+{% block title %} Job Portal {% endblock %}
+{% block home %} active {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+{% load static %}
+
+
+<div class="container-fluid">
+    <img src="{% static 'images/lap3.jpg' %}" style = "height:550px;width:100%">
+</div>
+<div class="container" style="background-color : gray ; height:520px; margin-top:3%">
+<h4 class ="text-center text-black ">------------| OUR PLACED STUDENTS |----------</h4>
+
+       <div class ="row mt-3">
+           <div class="col-md-3">
+               <img src="{% static 'images/office.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Facebook </p>
+               </div>
+           </div>
+
+           <div class="col-md-3">
+               <img src="{% static 'images/girl.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Amazon</p>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <img src="{% static 'images/lap3.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">TCS</p>
+               </div>
+           </div>
+            <div class="col-md-3">
+               <img src="{% static 'images/igirl2.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Capgemini</p>
+               </div>
+           </div>
+       </div>
+         <div class ="row mt-3">
+           <div class="col-md-3">
+               <img src="{% static 'images/lap.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Google</p>
+               </div>
+           </div>
+
+           <div class="col-md-3">
+               <img src="{% static 'images/igirl1.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Facebook</p>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <img src="{% static 'images/igirl.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Infosys</p>
+               </div>
+           </div>
+            <div class="col-md-3">
+               <img src="{% static 'images/lap2.jpg' %}" style="width=90% ; margin-top:5% ; height :180px;border-radius:50%">
+               <div class="content" >
+               <p class="text-center ">Wipro</p>
+               </div>
+           </div>
+       </div>
+</div>
+{% include 'Footer.html'%}
+{% endblock %}
